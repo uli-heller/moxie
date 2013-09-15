@@ -348,14 +348,6 @@ public class ProxyRequestHandler extends Thread {
 				throws IOException;
 	}
 
-	static private class DummyRequestHandler implements RequestHandler {
-		@Override
-		public void handleRequest(ProxyRequestHandler proxyRequestHandler, String downloadURL)
-				throws IOException {
-			throw new IOException("DummyRequestHandler called");
-		}
-	}
-
 	static private class GetRequestHandler implements RequestHandler {
 		@Override
 		public void handleRequest(ProxyRequestHandler proxyRequestHandler, String downloadURL)
