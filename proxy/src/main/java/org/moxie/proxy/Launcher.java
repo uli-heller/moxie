@@ -257,13 +257,11 @@ public class Launcher {
 
 		private final Component c;
 		
-		private final MoxieProxy app;
-
 		private final Logger logger = Logger.getLogger(ShutdownMonitorThread.class.getSimpleName());
 
 		public ShutdownMonitorThread(Component c, MoxieProxy app, ProxyConfig config) {
 			this.c = c;
-			this.app = app;
+			//this.app = app;
 			setDaemon(true);
 			setName("internal [SHUTDOWN] server");
 			ServerSocket skt = null;
